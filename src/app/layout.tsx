@@ -4,6 +4,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { MusicPlayer } from "@/components/MusicPlayer";
+import { SocialSidebar } from "@/components/SocialSidebar";
 import { Providers } from "@/components/providers";
 import { cn } from "@/lib/utils";
 import { Toaster } from "sonner";
@@ -52,6 +53,7 @@ export default function RootLayout({
       >
         <Providers>
            <MusicPlayer />
+           <SocialSidebar />
            <Navigation />
             <main className="w-full min-h-screen px-6 md:px-12 py-24 mx-auto max-w-[1920px]">
               {children}

@@ -12,6 +12,7 @@ Website portofolio pribadi yang dirancang dengan filosofi **"Smart Compact"**, m
 - **Responsive & Mobile First**: Tampilan optimal di semua perangkat, dari smartphone hingga desktop layar lebar.
 - **Twin Portrait Hero**: Hero section unik dengan dual-image layout (desktop) yang menyesuaikan diri di mobile.
 - **Immersive Music Player**: Pemutar musik *Smart Compact* di pojok kiri bawah dengan visualizer, playlist, dan kontrol lengkap.
+- **Social Sidebar**: Navigasi cepat ke GitHub, Instagram, TikTok, dan WhatsApp di sisi kanan layar.
 - **Dynamic Content**: Semua konten teks dikelola melalui sistem kamus (dictionary) terpusat untuk kemudahan maintenance dan lokalisasi.
 
 ## 🛠️ Teknologi
