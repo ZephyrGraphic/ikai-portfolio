@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --radius: 0.5rem;
+}
+
+:root {
+  /* Clean White Background */
+  --background: #ffffff; 
+  /* Deep Maroon */
+  --foreground: #4a0410; 
+  
+  /* Classic Maroon */
+  --primary: #800020;
+  
+  /* Elegant Grey Accent */
+  --accent: #64748b; 
+  
+  /* Slate 500 */
+  --muted: #64748b; 
+  --muted-foreground: #94a3b8;
+  
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark Slate Background */
+    --background: #0f172a; 
+    /* Off-white */
+    --foreground: #f8fafc; 
+    
+    /* Light Grey/White mix for primary in dark mode to be readable */
+    --primary: #f8fafc;
+    
+    /* Maroon Accent for Dark Mode or Keep Grey? 
+       User said "Maroon with Grey accent". 
+       In dark mode, usually Primary becomes light. 
+       Let's keep Accent as Grey or maybe Maroon?
+       Let's try Grey Accent for consistency, but maybe lighter.
+    */
+    --accent: #94a3b8;
+    
+    /* Slate 400 */
+    --muted: #94a3b8; 
+    --muted-foreground: #64748b;
+    
+    --border: #1e293b;
+    --input: #1e293b;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary selection:text-white;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/30 dark:bg-black/50 dark:border-white/10;
+  }
+  
+  /* Updated Gradient: Maroon to Grey */
+  .galaxy-gradient {
+    @apply bg-gradient-to-r from-[#800020] to-[#64748b];
+  }
+  
+  /* Gradient Text: Maroon -> Slate */
+  .text-galaxy {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-[#800020] via-[#500014] to-[#64748b] dark:from-[#ff8fa3] dark:to-[#94a3b8];
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-400/50 rounded-full hover:bg-slate-500/80;
+}
