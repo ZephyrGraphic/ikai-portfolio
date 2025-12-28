@@ -97,7 +97,7 @@ export function MusicPlayer() {
   }
 
   return (
-    <div className="fixed bottom-6 left-6 z-50 flex items-end gap-2">
+    <div className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-50 flex items-end gap-2">
       <audio 
         ref={audioRef} 
         src={currentTrack.src}
