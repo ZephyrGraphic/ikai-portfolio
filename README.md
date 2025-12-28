@@ -11,6 +11,7 @@ Website portofolio pribadi yang dirancang dengan filosofi **"Smart Compact"**, m
 - **Native Scroll Experience**: Menggunakan native CSS Scroll Snap untuk carousel proyek yang smooth dan performan tinggi.
 - **Responsive & Mobile First**: Tampilan optimal di semua perangkat, dari smartphone hingga desktop layar lebar.
 - **Twin Portrait Hero**: Hero section unik dengan dual-image layout (desktop) yang menyesuaikan diri di mobile.
+- **Immersive Music Player**: Pemutar musik *Smart Compact* di pojok kiri bawah dengan visualizer, playlist, dan kontrol lengkap.
 - **Dynamic Content**: Semua konten teks dikelola melalui sistem kamus (dictionary) terpusat untuk kemudahan maintenance dan lokalisasi.
 
 ## 🛠️ Teknologi
@@ -30,8 +31,8 @@ Ikuti langkah-langkah ini untuk menjalankan proyek di komputer lokal Anda:
 
 1.  **Clone Repository**
     ```bash
-    git clone https://github.com/ZephyrGraphic/portfolio.git
-    cd portfolio
+    git clone https://github.com/ZephyrGraphic/ikai-portfolio.git
+    cd ikai-portfolio
     ```
 
 2.  **Install Dependencies**

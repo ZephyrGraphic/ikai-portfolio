@@ -3,6 +3,7 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
+import { MusicPlayer } from "@/components/MusicPlayer";
 import { Providers } from "@/components/providers";
 import { cn } from "@/lib/utils";
 import { Toaster } from "sonner";
@@ -17,9 +18,6 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata = {
   title: "M. Z. Haikal Hamdani | Creative Technologist",
   description: "Portofolio M. Z. Haikal Hamdani - Web Developer & Teknolog Kreatif. Spesialis Next.js, UI/UX, dan Solusi Digital.",
-  icons: {
-    icon: "/favicon.png",
-  },
   openGraph: {
     title: "M. Z. Haikal Hamdani | Creative Technologist",
     description: "Portofolio M. Z. Haikal Hamdani - Web Developer & Teknolog Kreatif.",
@@ -53,6 +51,7 @@ export default function RootLayout({
         )}
       >
         <Providers>
+           <MusicPlayer />
            <Navigation />
             <main className="w-full min-h-screen px-6 md:px-12 py-24 mx-auto max-w-[1920px]">
               {children}
